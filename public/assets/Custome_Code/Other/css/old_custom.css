@@ -1,0 +1,73 @@
+.table-checkable tr > td:first-child, .table-checkable tr > th:first-child {
+    text-align: left;
+}
+
+.dataTables_wrapper button.dt-button {
+    display: none !important;
+}
+
+.buttonsToHide {
+    display: none !important;
+}
+/*.dt-buttons .btn-group .btn .btn-secondary {
+    display: none !important;
+}*/
+
+.table_action_buttons {
+    padding: 5px 5px;
+}
+
+a.panel_read_more {
+    color: #FFF;
+    padding: 10px 0px;
+}
+
+a.panel_read_more:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.page-header.navbar .page-logo{
+    width: 320px;
+}
+label.google-visualization-controls-label {
+    display: none;
+}
+
+.graph_title {
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+div.dataTables_wrapper .table-controls div.dataTables_filter {
+    text-align: left;
+    display: inline-block;
+    width: auto; vertical-align: middle;
+}
+
+div.dataTables_wrapper .table-controls div.dataTables_filter label {
+
+    margin: 0;
+}
+
+.dataTables_wrapper .table-controls .dt-buttons {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 4px
+}
+
+.table-controls .dataTables_length {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+table.dataTable tbody tr.selected {
+    color: black !important;
+    background-color: red !important;
+}
+
+table.dataTable tbody tr.selected {
+    background-color: #eaeef3 !important;
+  }

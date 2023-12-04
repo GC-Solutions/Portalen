@@ -1,0 +1,97 @@
+      
+<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.008.001.02">
+  <CstmrDrctDbtInitn>
+    <GrpHdr>
+      <MsgId>'.$MsgId .'</MsgId>
+      <CreDtTm>'. $curr_date.'</CreDtTm>
+      <NbOfTxs>1</NbOfTxs>
+      <CtrlSum>'.$CtrlSum.'</CtrlSum>
+      <InitgPty>
+        <Nm>'.$accHName.'</Nm>
+        <Id>
+          <OrgId>
+              <Othr>
+                  <Id>1201567M000</Id>
+                  <SchmeNm>
+                      <Cd>BANK</Cd>
+                  </SchmeNm>
+              </Othr>
+          </OrgId>
+        </Id>
+      </InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>'.$PmtInfId.'</PmtInfId>
+      <PmtMtd>DD</PmtMtd>
+      <BtchBookg>true</BtchBookg>
+      <NbOfTxs>1</NbOfTxs>
+      <CtrlSum>'.$CtrlSum.'</CtrlSum>
+      <PmtTpInf>
+        <SvcLvl>
+          <Cd>SEPA</Cd>
+        </SvcLvl>
+        <LclInstrm>
+          <Cd>B2B</Cd>
+        </LclInstrm>
+        <SeqTp>'.$SeqTp.'</SeqTp>
+      </PmtTpInf>
+      <ReqdColltnDt>'.$ReqdColltnDt.'</ReqdColltnDt>
+      <Cdtr>
+        <Nm>'.$accHName.'</Nm>
+      </Cdtr>
+      <CdtrAcct>
+        <Id>
+          <IBAN>'.$iban .'</IBAN>
+        </Id>
+        <Ccy>'.$Ccy.'</Ccy>
+      </CdtrAcct>
+      <CdtrAgt>
+        <FinInstnId>
+          <BIC>'. $bic.'</BIC>
+        </FinInstnId>
+      </CdtrAgt>
+      <ChrgBr>SLEV</ChrgBr>
+      <DrctDbtTxInf>
+        <PmtId>
+            <EndToEndId>1201567M000</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="'.$Ccy.'">'.$CtrlSum.'</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>'.$MndtId.'</MndtId>
+            <DtOfSgntr>'.$DtOfSgntr.'</DtOfSgntr>
+          </MndtRltdInf>
+          <CdtrSchmeId>
+            <Id>
+              <PrvtId>
+                <Othr>
+                  <Id>'.$cdtID.'</Id>
+                  <SchmeNm>
+                    <Prtry>SEPA</Prtry>
+                  </SchmeNm>
+                </Othr>
+              </PrvtId>
+            </Id>
+          </CdtrSchmeId>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>'.$customerBic.'</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>'.$customerName.'</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>'.$customerIban.'</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>'.$purpose.'</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+    </PmtInf>
+  </CstmrDrctDbtInitn>
+</Document>

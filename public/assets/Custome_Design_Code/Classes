@@ -1,0 +1,17 @@
+ class="table-responsive">   (Boostrap code located i Themese/nooostrap/table) This desig has red and  with. You need to icnlued <?php include_once realpath(__DIR__) . '/../layout/deisgn1.php'; ?>       
+
+ class="table-scrollable"
+ 
+ class="table table-bordered"
+ 
+ class="table table-striped custom-table table-hover"
+ 
+ class="table table-striped table-hover"
+ 
+ class="mdl-data-table" style="width:100%">
+ 
+ class="display" style="width:100%" id="Table_1">
+ 
+ 
+ 
+ 
