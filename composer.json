@@ -1,0 +1,15 @@
+{
+    "require": {
+        "twig/twig": "~2.0",
+        "google/apiclient": "^2.0",
+        "phpseclib/phpseclib": "^2.0",
+        "phpmailer/phpmailer": "^6.5",
+        "google/analytics-data": "^0.8.3"
+    },
+    "autoload": {
+        "psr-4": {
+             "Core\\": "Core/",
+             "App\\": "App/"
+        }
+    }
+}

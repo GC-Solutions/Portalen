@@ -1,0 +1,115 @@
+<?php include_once realpath(__DIR__ . '/../..') . '/layout/Admin_Layout/header_start.php'; ?>
+
+<?php include_once realpath(__DIR__ . '/../..') . '/layout/Admin_Layout/header_menu.php'; ?>
+    <div class="page-container">
+<?php include_once realpath(__DIR__ . '/../..') . '/layout/Admin_Layout/side_bar.php'; ?>
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-bar">
+                <div class="page-title-breadcrumb">
+                    <div class=" pull-left">
+                        <div class="page-title">Edit Company User</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="card card-box">
+                        <div class="card-head">
+                            <header>Edit Company User</header>
+                        </div>
+                        <div class="card-body" id="bar-parent1">
+                            <form action="<?php echo baseUrl;?>updateUser" method="post" id="form_sample_1" class="form-horizontal">
+                                <div class="form-body">
+                                    <input type="hidden" value="<?php echo $_REQUEST['companyId'];?>" name="CompanyID">
+                                    <input type="hidden" value="<?php echo $getUserDetails[0]['UserID'];?>" name="UserID">
+
+                                    <div class="form-group row">
+                                        <label class="control-label col-md-3">Name
+                                            <span class="required"> * </span>
+                                        </label>
+
+                                        <div class="col-md-4">
+                                            <input type="text" name="UserFirstName" value="<?php echo $getUserDetails[0]['UserFirstName'];?>" required data-required="1" class="form-control"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="control-label col-md-3">Lastname
+                                            <span class="required"> * </span>
+                                        </label>
+
+                                        <div class="col-md-4">
+                                            <input type="text" name="UserLastName" required value="<?php echo $getUserDetails[0]['UserLastName'];?>"  data-required="1" class="form-control"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="control-label col-md-3">Start Date
+                                            <span class="required"> * </span>
+                                        </label>
+
+                                        <div class="col-md-4">
+                                            <input type="text" name="UserStartDate" value="<?php echo $getUserDetails[0]['UserStartDate'];?>"  data-required="1" required class="form-control"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="control-label col-md-3">End Date
+                                            <span class="required"> * </span>
+                                        </label>
+
+                                        <div class="col-md-4">
+                                            <input type="text" name="UserEndDate" value="<?php echo $getUserDetails[0]['UserEndDate'];?>" data-required="1" required class="form-control"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="control-label col-md-3">Email
+                                            <span class="required"> * </span>
+                                        </label>
+
+                                        <div class="col-md-4">
+                                            <input type="email" name="UserEmail" value="<?php echo $getUserDetails[0]['UserEmail'];?>" data-required="1" required class="form-control"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="control-label col-md-3">Password
+                                            <span class="required"> * </span>
+                                        </label>
+
+                                        <div class="col-md-4">
+                                            <input type="password" name="UserPassword" value="<?php echo $getUserDetails[0]['UserPassword'];?>" required data-required="1" class="form-control"/>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="form-group">
+                                    <div class="offset-md-3 col-md-9">
+                                        <div class="btn-group">
+                                            <button type="submit" id="addRow" class="btn btn-info">
+                                                Skapa <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="btn-group">
+                                            <a class="btn deepPink-bgcolor" a href="<?php echo baseUrl;?>editcompany?id=<?= $_REQUEST['companyId'];?>">Ångra
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<?php //include_once 'layout/footer_start.php'; ?>
