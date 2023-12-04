@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>API Documentation</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link rel="stylesheet" href="../css/template.css" type="text/css"></link><script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script><script type="text/javascript" src="../js/jquery.tools.min.js"></script><script type="text/javascript" src="../js/jquery-ui-1.8.2.custom.min.js"></script><script type="text/javascript" src="../js/template.js"></script></head><body><div id="content"><h1 class="file">interfaces\IEnumerator.php<a href="../source/interfaces\IEnumerator.php.html"><img src="../images/icons/view_source.png" alt="View Source" border="0"></img></a></h1><div id="file-nav-box"><div id="file-nav-options">
+              Show:
+              <img src="../images/icons/visibility_public.png" alt="Public" id="show-public"></img><img src="../images/icons/visibility_protected.png" alt="Protected" id="show-protected"></img><img src="../images/icons/visibility_private.png" alt="Private" id="show-private"></img><span class="attribute" id="show-inherited">inherited</span></div><div id="file-nav-container"><ul id="file-nav"></ul><div style="clear: left;"></div></div><div id="file-nav-tab">
+              Table of Contents
+          </div></div><a name="top" class="anchor"></a><div id="file-description"><div xmlns:php="http://php.net/xsl" class="short-description">Part of the XML Schema library for PHP
+ _                      _     _ _ _
+| |   _   _  __ _ _   _(_) __| (_) |_ _   _
+| |  | | | |/ _` | | | | |/ _` | | __| | | |
+| |__| |_| | (_| | |_| | | (_| | | |_| |_| |
+|_____\__, |\__, |\__,_|_|\__,_|_|\__|\__, |
+      |___/    |_|                    |___/</div><div xmlns:php="http://php.net/xsl" class="long-description"></div></div><dl class="file-info"><dt xmlns:php="http://php.net/xsl">Author</dt><dd xmlns:php="http://php.net/xsl">Bill Seddon
+         
+    </dd><dt xmlns:php="http://php.net/xsl">Copyright</dt><dd xmlns:php="http://php.net/xsl">(C) 2018 Lyquidity Solutions Limited
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+         
+    </dd><dt xmlns:php="http://php.net/xsl">Package</dt><dd xmlns:php="http://php.net/xsl">Default
+         
+    </dd><dt xmlns:php="http://php.net/xsl">Version</dt><dd xmlns:php="http://php.net/xsl">0.9
+         
+    </dd></dl><a name="interfaces" class="anchor"></a><a id="\lyquidity\xml\interfaces\IEnumerator" class="anchor"></a><h2 class="interface">\lyquidity\xml\interfaces\IEnumerator<div class="to-top"><a href="#top">jump to top</a></div></h2><div class="class"><div class="description"></div><small class="package"><b>Package: </b>Default</small><div xmlns:php="http://php.net/xsl" class="short-description">Supports a simple iteration over a non-generic collection.</div><div xmlns:php="http://php.net/xsl" class="long-description"></div><dl class="class-info"></dl><h3>Methods</h3><div><a id="\lyquidity\xml\interfaces\IEnumerator::MoveNext()" class="anchor"></a><div class="method public"><a href="#" class="gripper"><img src="../images/icons/arrow_right.png"></img><img src="../images/icons/arrow_down.png" style="display: none;"></img></a><code class="title"><img src="../images/icons/method.png" alt="method" title="method"></img><img src="../images/icons/visibility_public.png" style="margin-right: 5px" alt="public"></img><span class="highlight">MoveNext</span><span class="nb-faded-text">()</span> : boolean</code><div class="description"><p class="short_description">Advances the enumerator to the next element of the collection.</p></div><div class="code-tabs"><div xmlns:php="http://php.net/xsl" class="long-description"></div><strong>Returns</strong><table class="argument-info"><thead><tr><th>Type</th><th>Description</th></tr></thead><tr><td>boolean</td><td>true if the enumerator was successfully advanced to the next element; false if
+    			the enumerator has passed the end of the collection.</td></tr></table><strong>Throws</strong><table class="argument-info"><thead><tr><th>Exception</th><th>Description</th></tr></thead><tr xmlns:php="http://php.net/xsl"><td>\lyquidity\xml\interfaces\InvalidOperationException</td><td><em>The collection was modified after the enumerator was created.</em></td></tr></table></div><div class="clear"></div></div><a id="\lyquidity\xml\interfaces\IEnumerator::Reset()" class="anchor"></a><div class="method public"><a href="#" class="gripper"><img src="../images/icons/arrow_right.png"></img><img src="../images/icons/arrow_down.png" style="display: none;"></img></a><code class="title"><img src="../images/icons/method.png" alt="method" title="method"></img><img src="../images/icons/visibility_public.png" style="margin-right: 5px" alt="public"></img><span class="highlight">Reset</span><span class="nb-faded-text">()</span> : void</code><div class="description"><p class="short_description">Sets the enumerator to its initial position, which is before the first element in the collection.</p></div><div class="code-tabs"><div xmlns:php="http://php.net/xsl" class="long-description"></div><strong>Throws</strong><table class="argument-info"><thead><tr><th>Exception</th><th>Description</th></tr></thead><tr xmlns:php="http://php.net/xsl"><td>\lyquidity\xml\interfaces\InvalidOperationException</td><td><em>The collection was modified after the enumerator was created.</em></td></tr></table></div><div class="clear"></div></div><a id="\lyquidity\xml\interfaces\IEnumerator::getCurrent()" class="anchor"></a><div class="method public"><a href="#" class="gripper"><img src="../images/icons/arrow_right.png"></img><img src="../images/icons/arrow_down.png" style="display: none;"></img></a><code class="title"><img src="../images/icons/method.png" alt="method" title="method"></img><img src="../images/icons/visibility_public.png" style="margin-right: 5px" alt="public"></img><span class="highlight">getCurrent</span><span class="nb-faded-text">()</span> : void</code><div class="description"><p class="short_description">Gets the current element in the collection.</p></div><div class="code-tabs"><div xmlns:php="http://php.net/xsl" class="long-description"></div><strong>Details</strong><dl class="function-info"><dt xmlns:php="http://php.net/xsl">Returns</dt><dd xmlns:php="http://php.net/xsl">object The current element in the collection.
+         
+    </dd></dl></div><div class="clear"></div></div></div></div></div><small class="footer">
+            Documentation was generated by
+            <a href="http://phpdoc.org">phpDocumentor
+                2.9.0</a>.
+        </small></body></html>
