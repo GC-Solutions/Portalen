@@ -127,10 +127,10 @@ class UpdateForm extends \Core\Controller
                 {
                     $results = json_decode($results, true);
                     if(isset($_SESSION['DeleteRedis'])) {
-                        $placeholderIdTable = (isset($_SESSION['RedisplaceholderId'])) ? $_SESSION['RedisplaceholderId'] : 0;
-                        $userPagePlaceholder = (isset(  $_SESSION['RedisId'])) ? $_SESSION['RedisId']: 0;
-                        $DeleteRedis = (isset($_SESSION['DeleteRedis'])) ? $_SESSION['DeleteRedis'] : 0;
-                        $DataArr = self::RedisUpdate($placeholderIdTable ,  $userPagePlaceholder  ,  $DeleteRedis);
+                    //    $placeholderIdTable = (isset($_SESSION['RedisplaceholderId'])) ? $_SESSION['RedisplaceholderId'] : 0;
+                    //    $userPagePlaceholder = (isset(  $_SESSION['RedisId'])) ? $_SESSION['RedisId']: 0;
+                    //    $DeleteRedis = (isset($_SESSION['DeleteRedis'])) ? $_SESSION['DeleteRedis'] : 0;
+                    //    $DataArr = self::RedisUpdate($placeholderIdTable ,  $userPagePlaceholder  ,  $DeleteRedis);
                     }
                     if($requestBody){
                         $body = json_decode($requestBody , true);
@@ -150,10 +150,10 @@ class UpdateForm extends \Core\Controller
                 }else if ($results) {
                     $decodedResults = json_decode($results, true);
                     if(isset($_SESSION['DeleteRedis'])) {
-                        $placeholderIdTable = (isset($_SESSION['RedisplaceholderId'])) ? $_SESSION['RedisplaceholderId'] : 0;
-                        $userPagePlaceholder = (isset( $_SESSION['RedisId'])) ? $_SESSION['RedisId']: 0;
-                        $DeleteRedis = (isset($_SESSION['DeleteRedis'])) ? $_SESSION['DeleteRedis'] : 0;
-                        $DataArr = self::RedisUpdate($placeholderIdTable ,  $userPagePlaceholder  ,  $DeleteRedis);
+                      //  $placeholderIdTable = (isset($_SESSION['RedisplaceholderId'])) ? $_SESSION['RedisplaceholderId'] : 0;
+                      //  $userPagePlaceholder = (isset( $_SESSION['RedisId'])) ? $_SESSION['RedisId']: 0;
+                      //  $DeleteRedis = (isset($_SESSION['DeleteRedis'])) ? $_SESSION['DeleteRedis'] : 0;
+                      //  $DataArr = self::RedisUpdate($placeholderIdTable ,  $userPagePlaceholder  ,  $DeleteRedis);
                     }
                     $apiData = $decodedResults;
                     if ($decodedResults) {
@@ -465,10 +465,10 @@ class UpdateForm extends \Core\Controller
                         if(strpos($requestUrl , 'getEditRole') !== false)
                         {
                             if(isset($postData['DeleteRedis'])) {
-                                $placeholderIdTable = (isset($postData['placeholderId'])) ? $postData['placeholderId'] : 0;
-                                $userPagePlaceholder = (isset($postData['userPagePlaceholder'])) ? $postData['userPagePlaceholder'] : 0;
-                                $DeleteRedis = (isset($postData['DeleteRedis'])) ? $postData['DeleteRedis'] : 0;
-                                $DataArr = self::RedisUpdate($placeholderIdTable ,  $userPagePlaceholder  ,  $DeleteRedis);
+                              //  $placeholderIdTable = (isset($postData['placeholderId'])) ? $postData['placeholderId'] : 0;
+                             //   $userPagePlaceholder = (isset($postData['userPagePlaceholder'])) ? $postData['userPagePlaceholder'] : 0;
+                            //    $DeleteRedis = (isset($postData['DeleteRedis'])) ? $postData['DeleteRedis'] : 0;
+                            //    $DataArr = self::RedisUpdate($placeholderIdTable ,  $userPagePlaceholder  ,  $DeleteRedis);
                             }
                             if($pageId && $decodedResults){
                                 //$url['url'] = baseUrl . 'page?id='.$pageId.'&page_text='.$pageText;
@@ -479,10 +479,10 @@ class UpdateForm extends \Core\Controller
                         }else if ($results) {
                             
                             if(isset($postData['DeleteRedis'])) {
-                                $placeholderIdTable = (isset($postData['placeholderId'])) ? $postData['placeholderId'] : 0;
-                                $userPagePlaceholder = (isset($postData['userPagePlaceholder'])) ? $postData['userPagePlaceholder'] : 0;
-                                $DeleteRedis = (isset($postData['DeleteRedis'])) ? $postData['DeleteRedis'] : 0;
-                                $DataArr = self::RedisUpdate($placeholderIdTable ,  $userPagePlaceholder  ,  $DeleteRedis);
+                            //    $placeholderIdTable = (isset($postData['placeholderId'])) ? $postData['placeholderId'] : 0;
+                            //    $userPagePlaceholder = (isset($postData['userPagePlaceholder'])) ? $postData['userPagePlaceholder'] : 0;
+                             //   $DeleteRedis = (isset($postData['DeleteRedis'])) ? $postData['DeleteRedis'] : 0;
+                             //   $DataArr = self::RedisUpdate($placeholderIdTable ,  $userPagePlaceholder  ,  $DeleteRedis);
                             }
                             $decodedResults = json_decode($results, true);
                             if($pageId && $decodedResults){
@@ -606,10 +606,10 @@ class UpdateForm extends \Core\Controller
                             if(strpos($requestUrl , 'getEditRole') !== false)
                             {
                                 if(isset($postData['DeleteRedis'])) {
-                                    $placeholderIdTable = (isset($postData['placeholderId'])) ? $postData['placeholderId'] : 0;
-                                    $userPagePlaceholder = (isset($postData['userPagePlaceholder'])) ? $postData['userPagePlaceholder'] : 0;
-                                    $DeleteRedis = (isset($postData['DeleteRedis'])) ? $postData['DeleteRedis'] : 0;
-                                    $DataArr = self::RedisUpdate($placeholderIdTable ,  $userPagePlaceholder  ,  $DeleteRedis);
+                                //    $placeholderIdTable = (isset($postData['placeholderId'])) ? $postData['placeholderId'] : 0;
+                                //    $userPagePlaceholder = (isset($postData['userPagePlaceholder'])) ? $postData['userPagePlaceholder'] : 0;
+                                //    $DeleteRedis = (isset($postData['DeleteRedis'])) ? $postData['DeleteRedis'] : 0;
+                                //    $DataArr = self::RedisUpdate($placeholderIdTable ,  $userPagePlaceholder  ,  $DeleteRedis);
                                 }
                                 if($pageId && $decodedResults){
                                     //$url['url'] = baseUrl . 'page?id='.$pageId.'&page_text='.$pageText;
@@ -618,10 +618,10 @@ class UpdateForm extends \Core\Controller
                                 }
                             }else if ($results) {
                                 if(isset($postData['DeleteRedis'])) {
-                                    $placeholderIdTable = (isset($postData['placeholderId'])) ? $postData['placeholderId'] : 0;
-                                    $userPagePlaceholder = (isset($postData['userPagePlaceholder'])) ? $postData['userPagePlaceholder'] : 0;
-                                    $DeleteRedis = (isset($postData['DeleteRedis'])) ? $postData['DeleteRedis'] : 0;
-                                    $DataArr = self::RedisUpdate($placeholderIdTable ,  $userPagePlaceholder  ,  $DeleteRedis);
+                               //     $placeholderIdTable = (isset($postData['placeholderId'])) ? $postData['placeholderId'] : 0;
+                                //    $userPagePlaceholder = (isset($postData['userPagePlaceholder'])) ? $postData['userPagePlaceholder'] : 0;
+                                //    $DeleteRedis = (isset($postData['DeleteRedis'])) ? $postData['DeleteRedis'] : 0;
+                                //    $DataArr = self::RedisUpdate($placeholderIdTable ,  $userPagePlaceholder  ,  $DeleteRedis);
                                 }
                                 $decodedResults = json_decode($results, true);
                                 if($pageId && $decodedResults){

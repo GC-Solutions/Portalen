@@ -4199,7 +4199,7 @@ function ShowTableData(url, Table_ID, columnsUrl, placeholderId, tableTitle,sear
                                     var d = data.toString().replace(/\./g, "").replace(/,/, ".");
                                     if(d.charAt(1) != '.')
                                     {
-                                    d = d.replace(/^0+/, '');
+                                  //  d = d.replace(/^0+/, '');
                                     }
                                 
                                 }
